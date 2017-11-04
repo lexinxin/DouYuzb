@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		18C3E04C1FAD68AA00831F2E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E04B1FAD68AA00831F2E /* AppDelegate.swift */; };
-		18C3E04E1FAD68AA00831F2E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18C3E04D1FAD68AA00831F2E /* ViewController.swift */; };
 		18C3E0511FAD68AA00831F2E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C3E04F1FAD68AA00831F2E /* Main.storyboard */; };
 		18C3E0531FAD68AA00831F2E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18C3E0521FAD68AA00831F2E /* Assets.xcassets */; };
 		18C3E0561FAD68AA00831F2E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18C3E0541FAD68AA00831F2E /* LaunchScreen.storyboard */; };
@@ -17,7 +16,6 @@
 /* Begin PBXFileReference section */
 		18C3E0481FAD68AA00831F2E /* DYZB.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYZB.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18C3E04B1FAD68AA00831F2E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18C3E04D1FAD68AA00831F2E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18C3E0501FAD68AA00831F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18C3E0521FAD68AA00831F2E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18C3E0551FAD68AA00831F2E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,14 +52,69 @@
 		18C3E04A1FAD68AA00831F2E /* DYZB */ = {
 			isa = PBXGroup;
 			children = (
+				18DDB3DD1FAD8BB000DFE6FF /* Classes */,
 				18C3E04B1FAD68AA00831F2E /* AppDelegate.swift */,
-				18C3E04D1FAD68AA00831F2E /* ViewController.swift */,
 				18C3E04F1FAD68AA00831F2E /* Main.storyboard */,
 				18C3E0521FAD68AA00831F2E /* Assets.xcassets */,
 				18C3E0541FAD68AA00831F2E /* LaunchScreen.storyboard */,
 				18C3E0571FAD68AA00831F2E /* Info.plist */,
 			);
 			path = DYZB;
+			sourceTree = "<group>";
+		};
+		18DDB3DD1FAD8BB000DFE6FF /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				18DDB3E11FAD8BB000DFE6FF /* Main */,
+				18DDB3DF1FAD8BB000DFE6FF /* Home */,
+				18DDB3E01FAD8BB000DFE6FF /* Live */,
+				18DDB3DE1FAD8BB000DFE6FF /* Follow */,
+				18DDB3E21FAD8BB000DFE6FF /* Profile */,
+				18DDB3E31FAD8BB000DFE6FF /* Tools */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		18DDB3DE1FAD8BB000DFE6FF /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		18DDB3DF1FAD8BB000DFE6FF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		18DDB3E01FAD8BB000DFE6FF /* Live */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		18DDB3E11FAD8BB000DFE6FF /* Main */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		18DDB3E21FAD8BB000DFE6FF /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		18DDB3E31FAD8BB000DFE6FF /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +189,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18C3E04E1FAD68AA00831F2E /* ViewController.swift in Sources */,
 				18C3E04C1FAD68AA00831F2E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +326,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DYZB/Info.plist;
@@ -290,6 +343,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = DYZB/Info.plist;
